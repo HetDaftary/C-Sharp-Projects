@@ -2,3 +2,6 @@
 **/dist
 **/*.exe
 **/*.out
+**/.vs
+**/bin
+**/obj
