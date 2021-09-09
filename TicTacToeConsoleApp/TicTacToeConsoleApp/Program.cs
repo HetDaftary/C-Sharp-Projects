@@ -17,7 +17,7 @@ namespace TicTacToeConsoleApp
             {
                 for (int j = 0; j < 3; j++)
                 {
-                    Console.Write(String.Format("| {0} ", game[i, j]));
+                    Console.Write($"| {game[i, j]} ");
                 }
                 Console.WriteLine("|");
             }
@@ -84,7 +84,7 @@ namespace TicTacToeConsoleApp
             while (numberOfTurns < 9)
             {
                 printGame(game);
-                Console.Write(String.Format("{0}'s turn. Enter the move: ", currentTurn));
+                Console.Write($"{currentTurn}'s turn. Enter the move: ");
                 arr = Array.ConvertAll(Console.ReadLine().Trim(toTrim).Split(), int.Parse);
                 x = arr[0];
                 y = arr[1];
@@ -95,7 +95,7 @@ namespace TicTacToeConsoleApp
                     game[x, y] = currentTurn;
                     if (checkWin(game, currentTurn))
                     {
-                        Console.WriteLine(String.Format("{0} wins!", currentTurn));
+                        Console.WriteLine($"{currentTurn} wins!");
                         printGame(game);
                         return;
                     }
