@@ -1,6 +1,11 @@
 # C-Sharp-Projects
 Learning C# and making some projects in it.
 
+## How to run the app?
+
+- Open them in Visual Studio and Click on run project. 
+- Visual Studio will compile and run them for you.
+
 ## Projects Implemented
 
 - Console Apps
