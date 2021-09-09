@@ -238,7 +238,7 @@ namespace TicTacToeConsoleApp
                 Console.WriteLine("Enter q to quit");
                 // Providing user with description.
 
-                // You can also use str.toLower here but I do not want to use that.
+                // You can also use str.ToLower here but I do not want to use that.
                 option = makeLower(Console.ReadLine()[0]);
                 // Reading a character from the console and converting it to lower case.
                 
